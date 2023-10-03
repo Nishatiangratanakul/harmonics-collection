@@ -1,0 +1,19 @@
+body{
+    background: #F5F2EF;
+}
+
+h1{
+    color: #2E3494;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title-container{
+    max-height: 50vh;
+    display: flex;
+    left: 50%;
+    transform: translateX(50%);
+}

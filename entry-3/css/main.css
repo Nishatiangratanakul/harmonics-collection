@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(210, 206, 196);
+}
+.img-container {
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 500px; 
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+img.image-hover {
+    position: absolute;
+    opacity: 0;
+    width: 500px;
+    transition: opacity 0.3s;
+}
+
+.overlay-button {
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.img-container img,
+img.image-hover {
+    display: block;
+    margin: 0 auto;
+}
+
+.img-container:hover img.image-hover {
+    opacity: 1;
+}
+
+.img-container:hover img:first-child {
+    opacity: 0;
+}

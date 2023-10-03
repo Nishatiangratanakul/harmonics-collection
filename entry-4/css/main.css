@@ -1,0 +1,221 @@
+h1 {
+    color: rgb(0, 47, 202);
+    font-size: 60px;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    left: 50%; 
+    padding-top: 100px;
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    z-index: 3;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block flex;
+    justify-content: center;
+}
+
+.background {
+    min-width: 100vw;
+    max-height: 55vw;
+    margin:-10px;
+    padding: -5px;
+    display: block;
+    position: relative;
+    background-size: contain; /* This property scales the background image to cover the entire container, cropping the excess */
+    background-position: center center; /* Center the background image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and crop as needed */
+}
+
+.onions {
+    position: absolute;
+    bottom: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.onion-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+}
+
+.onion-button img {
+    max-width: 15%;
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.onion-button:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.onion-button span {
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.rice {
+    position: absolute;
+    bottom: 65%;
+    left: 40%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.rice-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+}
+
+.rice-button img {
+    max-width: 10%; 
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.rice-button:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.rice-button span {
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.soysauce {
+    position: absolute;
+    bottom: 27%;
+    left: 65%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.soysauce-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+}
+
+.soysauce-button img {
+    max-width: 18%; 
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.soysauce-button:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.soysauce-button span {
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.vinegar {
+    position: absolute;
+    bottom: 55%;
+    left: 60%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.vinegar-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+}
+
+.vinegar-button img {
+    max-width: 14%; 
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.vinegar-button:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.vinegar-button span {
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.tofu {
+    position: absolute;
+    bottom: 27%;
+    left: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.tofu-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+}
+
+.tofu-button img {
+    max-width: 9%; 
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.tofu-button:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.tofu-button span {
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.paper{
+    position: absolute;
+    display: flex block;
+    align-content: center;
+    max-width: 25vw;
+    bottom: 0;
+    left: 0;
+}
+

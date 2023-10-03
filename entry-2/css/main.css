@@ -9,14 +9,6 @@ h1{
   margin-bottom: 25px;
 }
 
-.intro{
-  font-family: Helvetica, sans-serif;
-  color:rgb(147, 120, 77);
-  width:685px;
-  margin-left:10px;
-  margin-bottom: 30px;
-}
-
 .chat-header-top{
   height: 100px;
   width: 700px;
@@ -295,4 +287,28 @@ animate{
   100%{
     opacity: 0;
   }
+}
+
+.typewriter {
+  display: flex;
+  align-items: center;
+  overflow: hidden; 
+  border-right: .15em solid black; 
+  white-space: nowrap;
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
 }

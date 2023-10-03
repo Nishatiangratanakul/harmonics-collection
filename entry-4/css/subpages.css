@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'overlook';
+    src: url('../assets/fonts/Overlook.otf') format('opentyoe');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color: rgb(250, 250, 250);
+    font-size: 60px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    position: absolute;
+    display: flex;
+    top: 10%;
+    z-index: 3;
+}
+
+.img-container {
+    position: relative;
+}
+
+.background {
+    min-width: 100vw;
+    max-height: 55vw;
+    display: block;
+    position: relative; /* Add position relative to the background */
+}
+
+.grid-container {
+    position: absolute;
+    top: 53%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    display: flex;
+    justify-content: space-between; /* Equal spacing between images */
+    max-width: 80%; /* Adjust the maximum width of the container */
+}
+
+.grid-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Set the text color */
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px; /* Add some padding to the image */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.grid-item span {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(248, 248, 243);
+    margin-top: 10px;
+}
+
+.popout img {
+    transform: none;
+}
+
+.item-content:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.grid-item:nth-child(1) .popout-container {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grid-item:nth-child(2) .popout-container {
+    left: 50%; /* Position it under the second image */
+    transform: translateX(-50%);
+}
+
+.grid-item:nth-child(3) .popout-container {
+    right: 0; /* Position it under the third image */
+    transform: translateX(0);
+}
+
+.popout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+    background: none;
+}
+
+
+.popout-content {
+    min-width: 40vw;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto; /* Center horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+}
+
+.close-popout {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.close-popout:hover {
+    background-color: #555;
+}
+
+.close-popout:focus {
+    outline: none;
+}
+
+.popout-content span {
+    position: absolute;
+    color: black;
+    font-family: 'overlook', sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+}
+
+
+.home-button {
+    position: fixed;
+    bottom: 12vh; /* Adjust the space from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 3; /* Ensure it's above other elements */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.home-button i {
+    margin-right: 5px; 
+}
+
+.home-button:hover {
+    background-color: #555;
+}
+
+.button-container{
+    margin-bottom: 50px;
+}

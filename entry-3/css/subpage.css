@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'overlook';
+    src: url('../assets/fonts/Overlook.otf') format('opentyoe');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sarabun-new-regular';
+    src: url('../assets/fonts/TH Sarabun New Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sarabun-new-bold';
+    src: url('../assets/fonts/TH Sarabun New Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(210, 206, 196);
+}
+
+.thai{
+    font-family: sarabun-new-regular, sans-serif;
+    font-size: 20px;
+}
+
+.thai-title{
+    font-family: sarabun-new-bold, sans-serif;
+    font-size: 25px;
+}
+
+.letter-container {
+    background-image: url('../assets/images/letter.png');
+    background-size:800px;
+    width:  800px;
+    padding-left: 90px;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.text-container{
+    max-width: 100%;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+h1{
+    font-family: 'overlook', sans-serif;
+    font-size: 25px;
+    line-height: 2;
+}
+
+h2{
+    font-family: overlook, sans-serif;
+    font-size: 20px;
+    line-height: .6;
+    padding-top: 5px;
+}
+
+h3{
+    font-family: overlook, sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+ol{
+    font-family: overlook, sans-serif;
+    font-size: 15px;
+    line-height: .5;
+    padding: 2px;
+    margin: 2px 0;
+    padding-left: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style-type:circle;
+}
+
+li{
+    font-family: overlook, sans-serif;
+    font-size: 15px;
+    line-height: 1.7; 
+    padding: 2px;
+    margin: 2px 0; 
+}
+
+.text-container.clicked {
+    background-color: transparent;
+    color: red;
+}

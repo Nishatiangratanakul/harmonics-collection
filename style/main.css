@@ -1,3 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E3494;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 50px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-family: 'Cutive Mono', monospace;
+    color: #F5F2EF;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-bar a:hover {
+    color: #c0d3e0;
+}
+
+
 body{
     background: #F5F2EF;
 }
@@ -13,7 +45,26 @@ h1{
 
 .title-container{
     max-height: 50vh;
+    position: absolute;
     display: flex;
+    top: 30%;
     left: 50%;
-    transform: translateX(50%);
+    transform: translateX(-50%);
 }
+
+/* body text styling
+p{
+    color: #2E3494;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-container{
+    margin-top: 50%;
+    max-height: 50vh;
+}
+
+*/

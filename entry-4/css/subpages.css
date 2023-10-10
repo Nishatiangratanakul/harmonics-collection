@@ -14,10 +14,10 @@ body {
 }
 
 h1{
-    color: rgb(250, 250, 250);
+    color: white;
     font-size: 60px;
     font-family: Helvetica, sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     position: absolute;
     display: flex;
     top: 10%;
@@ -32,17 +32,17 @@ h1{
     min-width: 100vw;
     max-height: 55vw;
     display: block;
-    position: relative; /* Add position relative to the background */
+    position: relative;
 }
 
 .grid-container {
     position: absolute;
-    top: 53%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     display: flex;
-    justify-content: space-between; /* Equal spacing between images */
-    max-width: 80%; /* Adjust the maximum width of the container */
+    justify-content: space-between;
+    max-width: 80%; 
 }
 
 .grid-item {
@@ -50,15 +50,15 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none; /* Remove underlines from links */
-    color: #333; /* Set the text color */
+    text-decoration: none; 
+    color: #333; 
 }
 
 .grid-item img {
     max-width: 100%;
     height: auto;
-    padding: 5px; /* Add some padding to the image */
-    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .grid-item span {
@@ -107,11 +107,11 @@ h1{
     min-width: 40vw;
     text-align: center;
     padding: 20px;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    transform: translate(-50%, -50%);
 }
 
 .close-popout {
@@ -138,13 +138,13 @@ h1{
     line-height: 2;
     top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+    transform: translate(-50%, -50%);
 }
 
 
 .home-button {
     position: fixed;
-    bottom: 12vh; /* Adjust the space from the bottom as needed */
+    bottom: 12vh;
     left: 50%;
     transform: translateX(-50%);
     background-color: #333;
@@ -152,7 +152,7 @@ h1{
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    z-index: 3; /* Ensure it's above other elements */
+    z-index: 3;
     cursor: pointer;
     display: flex;
     align-items: center;

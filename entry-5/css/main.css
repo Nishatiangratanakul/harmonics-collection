@@ -1,0 +1,270 @@
+/* Default styles */
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(28, 18, 168);
+    font-size: 60px;
+    z-index: 1;
+    transform: translateX(100%);
+    top: -30px;
+    text-align: center;
+
+}
+
+.img-container img.background {
+    position: relative;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.legend {
+    position: absolute;
+    max-width: 15vw;
+    left: 2vw;
+    bottom: 2vw;
+    z-index: 1;
+}
+
+.grid-item .hk-supermarket {
+    position: absolute;
+    z-index: 1;
+    left: 50%; 
+    bottom: 33%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .bk-grocery {
+    position: absolute;
+    z-index: 1;
+    left: 48%; 
+    bottom: 26%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .raku {
+    position: absolute;
+    z-index: 1;
+    left: 42%;
+    bottom: 38%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .chodanggol {
+    position: absolute;
+    z-index: 1;
+    left: 44%;
+    bottom: 75%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .kimura {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 48%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .pranakhon {
+    position: absolute;
+    z-index: 1;
+    left: 46.3%;
+    bottom: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .dainobu {
+    position: absolute;
+    z-index: 1;
+    left: 43.5%;
+    bottom: 52%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .meilaiwah {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 29%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .jooytea {
+    position: absolute;
+    z-index: 1;
+    left: 46%;
+    bottom: 56.5%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .cha-an {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 51%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item .fong-on {
+    position: absolute;
+    z-index: 1;
+    left: 51.8%;
+    bottom: 30%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 20%;
+}
+
+.grid-item:hover img {
+    margin-top: -10px; 
+}
+
+.grid-item span {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.item-content span {
+    display: none;
+}
+
+.kimura:hover span {
+    display: block;
+}
+
+.bk-grocery:hover span {
+    display: block;
+}
+
+.hk-supermarket:hover span {
+    display: block;
+}
+
+.raku:hover span {
+    display: block;
+}
+
+.chodanggol:hover span {
+    display: block;
+}
+
+.pranakhon:hover span {
+    display: block;
+}
+
+.dainobu:hover span {
+    display: block;
+}
+
+.meilaiwah:hover span {
+    display: block;
+}
+
+.bbq-stand:hover span {
+    display: block;
+}
+
+.jooytea:hover span {
+    display: block;
+}
+
+.cha-an:hover span {
+    display: block;
+}
+
+.fong-on:hover span {
+    display: block;
+}
+
+.popout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.popout-content {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #333; /* Add a black border */
+}
+
+.popout-content .name{
+    font-family: 'overlook', sans-serif;
+    font-size: 25px;
+}
+
+.popout-content img{
+    max-width: 50%;
+}
+
+.close-popout {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px; /* Add margin to create space below the close button */
+}
+
+.popout-content span {
+    color: black;
+    font-family: 'overlook', sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 10px; /* Add margin to create space above the span */
+}
+
+.close-popout:hover {
+    background-color: #555;
+}
+
+.close-popout:focus {
+    outline: none;
+}

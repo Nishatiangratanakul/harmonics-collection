@@ -11,28 +11,13 @@ h1 {
     z-index: 3;
 }
 
-.img-container {
-    position: relative;
-    display: inline-block flex;
-    justify-content: center;
-}
-
-.background {
-    min-width: 100vw;
-    max-height: 55vw;
-    margin:-10px;
-    padding: -5px;
-    display: block;
-    position: relative;
-    background-size: contain; /* This property scales the background image to cover the entire container, cropping the excess */
-    background-position: center center; /* Center the background image horizontally and vertically */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-}
-
-.background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and crop as needed */
+.parent {
+    background-image: url("../assets/images/background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:0;
+    margin:0;
 }
 
 .onions {
@@ -55,7 +40,7 @@ h1 {
 }
 
 .onion-button img {
-    max-width: 15%;
+    max-width: 12%;
     transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
 
@@ -90,7 +75,7 @@ h1 {
 }
 
 .rice-button img {
-    max-width: 10%; 
+    max-width: 8%; 
     transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
 
@@ -108,7 +93,7 @@ h1 {
 .soysauce {
     position: absolute;
     bottom: 27%;
-    left: 65%;
+    left: 60%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
@@ -125,7 +110,7 @@ h1 {
 }
 
 .soysauce-button img {
-    max-width: 18%; 
+    max-width: 13%; 
     transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
 
@@ -142,7 +127,7 @@ h1 {
 
 .vinegar {
     position: absolute;
-    bottom: 55%;
+    bottom: 54%;
     left: 60%;
     transform: translateX(-50%);
     display: flex;
@@ -160,7 +145,7 @@ h1 {
 }
 
 .vinegar-button img {
-    max-width: 14%; 
+    max-width: 12%; 
     transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
 
@@ -177,8 +162,8 @@ h1 {
 
 .tofu {
     position: absolute;
-    bottom: 27%;
-    left: 30%;
+    bottom: 26.5%;
+    left: 40%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
@@ -195,7 +180,7 @@ h1 {
 }
 
 .tofu-button img {
-    max-width: 9%; 
+    max-width: 8%; 
     transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
 

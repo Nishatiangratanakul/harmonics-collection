@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show the popout when the grid item is clicked
         gridItem.addEventListener("click", (e) => {
             e.stopPropagation(); // Prevent click event from propagating to the container
-            popout.style.display = "block";
+            popout.style.display = "flex";
         });
 
         // Close the popout when the "Close" button is clicked

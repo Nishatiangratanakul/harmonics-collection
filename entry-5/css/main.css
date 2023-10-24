@@ -7,7 +7,7 @@ body {
     position: absolute;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(28, 18, 168);
+    color: rgb(25, 14, 186);
     font-size: 25px;
     z-index: 1;
     top: -10px;
@@ -238,11 +238,14 @@ h1 {
 }
 
 .popout-content .name{
-    font-family: 'overlook', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    color: rgb(25, 14, 186);
     font-size: 25px;
 }
 
 .popout-content img{
+    margin-top: 15px;
     max-width: 50%;
 }
 
@@ -257,10 +260,10 @@ h1 {
 }
 
 .popout-content span {
-    color: black;
-    font-family: 'overlook', sans-serif;
-    font-size: 14px;
-    line-height: 2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: rgb(25, 14, 186);
+    font-size: 12px;
     margin-top: 10px;
 }
 

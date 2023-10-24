@@ -20,7 +20,7 @@
 .nav-bar a {
     text-decoration: none;
     font-family: 'Cutive Mono', monospace;
-    color: #020b87;
+    color: rgb(25, 14, 186);
     transition: all 0.3s ease 0s;
 }
 
@@ -30,29 +30,26 @@
 
 
 body{
-    background: #020b87;
+    background: rgb(25, 14, 186);
 }
 
-h1{
-    color: #2E3494;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.title-container{
-    position: absolute;
+.container {
     display: flex;
-    align-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.title-container img{
-    max-width: 50vw;
-    transform: translateX(50%);
-    padding-top: 12.5vh;
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 200px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25, 14, 186);
 }
 
 /* body text styling

@@ -42,6 +42,7 @@ body{
 
 .title {
     font-family: 'Courier New', Courier, monospace;
+    text-align: start;
     color: rgb(255, 255, 255);
     font-size: 200px;
     margin: 0;

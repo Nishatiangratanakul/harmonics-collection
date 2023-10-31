@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Entry 7</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="scroll-box">
+            <div class="container">
+                <h1>Food Aura Reader</h1>
+                <p>Enter your favorite dish and select one adjective to describe it.</p>
+
+                <label for="favoriteDish"></label>
+                <input type="text" id="favoriteDish" placeholder="Enter your favorite dish">
+
+                <p>Select Adjective:</p>
+                <input type="checkbox" id="sweet">
+                <label for="spicy">Sweet</label><br>
+                <input type="checkbox" id="spicy">
+                <label for="spicy">Spicy</label><br>
+                <input type="checkbox" id="tangy">
+                <label for="tangy">Tangy</label><br>
+                <input type="checkbox" id="salty">
+                <label for="salty">Salty</label><br>
+                <input type="checkbox" id="Rich">
+                <label for="heavy">Rich</label><br>
+                <input type="checkbox" id="fresh">
+                <label for="fresh">Fresh</label><br>
+
+                <br>
+                <button onclick="generateAura()">Generate Aura</button>
+
+                <div class="polaroid">
+                    <div class="polaroid-box">
+                        <div class="polaroid-film">
+                            <div class="aura-color"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

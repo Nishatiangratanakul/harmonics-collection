@@ -20,17 +20,21 @@
 .nav-bar a {
     text-decoration: none;
     font-family: 'Cutive Mono', monospace;
-    color: rgb(25, 14, 186);
     transition: all 0.3s ease 0s;
+    color: black;
+}
+
+.nav-bar{
+    background: #e3e3e3;
 }
 
 .nav-bar a:hover {
-    color: #c0d3e0;
+    color: #ffffff;
 }
 
 
 body{
-    background: rgb(25, 14, 186);
+    background: #f0f0f0;
 }
 
 .container {
@@ -43,14 +47,14 @@ body{
 .title {
     font-family: 'Courier New', Courier, monospace;
     text-align: start;
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 200px;
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(25, 14, 186);
+    background: #f0f0f0;
 }
 
 /* body text styling

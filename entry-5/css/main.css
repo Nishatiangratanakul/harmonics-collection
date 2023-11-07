@@ -1,46 +1,41 @@
 body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
 }
 
 .title {
     position: absolute;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(25, 14, 186);
+    font-family: monospace;
+    color: rgb(0, 0, 0);
     font-size: 25px;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     top: -10px;
+    transform: translateX(50%);
 }
 
-h1 {
-    transform: translateX(130%);
+@media (min-width: 900px) {
+    .title{
+        transform: translateX(125%);
+    }
+
 }
 
 .parent {
-    background-image: url("../assets/images/map.png");
+    background-image: url("../assets/images/map 2.png");
     background-size: cover;
     background-position: center;
-    position: relative;
+    background-color: #f0f0f0;
     height: 100vh;
     width: 100vw;
-    display: block;
-    margin: 0 auto;
-}
-
-.legend {
-    position: absolute;
-    width: 15vw;
-    left: 2vw;
-    bottom: 2vw;
-    z-index: 1;
 }
 
 .grid-item .hk-supermarket {
     position: absolute;
     z-index: 1;
-    left: 50%; 
-    bottom: 33%; 
+    left: 58.2%; 
+    bottom: 35.2%; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -50,8 +45,8 @@ h1 {
 .grid-item .bk-grocery {
     position: absolute;
     z-index: 1;
-    left: 48%; 
-    bottom: 26%; 
+    left: 56.5%; 
+    bottom: 29%; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -61,8 +56,8 @@ h1 {
 .grid-item .raku {
     position: absolute;
     z-index: 1;
-    left: 42%;
-    bottom: 38%; 
+    left: 51%;
+    bottom: 40%; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -72,8 +67,8 @@ h1 {
 .grid-item .chodanggol {
     position: absolute;
     z-index: 1;
-    left: 44%;
-    bottom: 75%; 
+    left: 52.5%;
+    bottom: 74%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,8 +77,8 @@ h1 {
 .grid-item .kimura {
     position: absolute;
     z-index: 1;
-    left: 50%;
-    bottom: 48%; 
+    left: 58%;
+    bottom: 51%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,8 +87,8 @@ h1 {
 .grid-item .pranakhon {
     position: absolute;
     z-index: 1;
-    left: 46.3%;
-    bottom: 50%; 
+    left: 54.5%;
+    bottom: 52%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,8 +97,8 @@ h1 {
 .grid-item .dainobu {
     position: absolute;
     z-index: 1;
-    left: 43.5%;
-    bottom: 52%; 
+    left: 52.5%;
+    bottom: 54.5%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,8 +107,8 @@ h1 {
 .grid-item .meilaiwah {
     position: absolute;
     z-index: 1;
-    left: 50%;
-    bottom: 29%; 
+    left: 58.5%;
+    bottom: 31.5%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,8 +117,8 @@ h1 {
 .grid-item .jooytea {
     position: absolute;
     z-index: 1;
-    left: 46%;
-    bottom: 56.5%; 
+    left: 54.5%;
+    bottom: 58.5%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,8 +127,8 @@ h1 {
 .grid-item .cha-an {
     position: absolute;
     z-index: 1;
-    left: 50%;
-    bottom: 51%; 
+    left: 58%;
+    bottom: 53%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,15 +137,16 @@ h1 {
 .grid-item .fong-on {
     position: absolute;
     z-index: 1;
-    left: 51.8%;
-    bottom: 30%; 
+    left: 60.5%;
+    bottom: 32.5%; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.grid-item img {
-    max-width: 20%;
+
+.item-content img {
+    width: 20px;
 }
 
 .grid-item:hover img {
@@ -158,61 +154,18 @@ h1 {
 }
 
 .grid-item span {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     color: rgb(0, 0, 0);
-    
 }
 
 .item-content span {
-    display: none;
+    display: none absolute;
+    white-space: nowrap; 
 }
 
-.kimura:hover span {
-    display: block;
-}
-
-.bk-grocery:hover span {
-    display: block;
-}
-
-.hk-supermarket:hover span {
-    display: block;
-}
-
-.raku:hover span {
-    display: block;
-}
-
-.chodanggol:hover span {
-    display: block;
-}
-
-.pranakhon:hover span {
-    display: block;
-}
-
-.dainobu:hover span {
-    display: block;
-}
-
-.meilaiwah:hover span {
-    display: block;
-}
-
-.bbq-stand:hover span {
-    display: block;
-}
-
-.jooytea:hover span {
-    display: block;
-}
-
-.cha-an:hover span {
-    display: block;
-}
-
-.fong-on:hover span {
-    display: block;
+.item-content:hover span {
+    display: inline-block;
 }
 
 .popout {
@@ -231,16 +184,16 @@ h1 {
 
 .popout-content {
     text-align: center;
-    background-color: white;
+    background-color: #f0f0f0;
     border-radius: 5px;
     padding: 20px;
     border: 1px solid #333; 
 }
 
 .popout-content .name{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     font-weight: 550;
-    color: rgb(25, 14, 186);
+    color: rgb(0, 0, 0);
     font-size: 25px;
 }
 
@@ -257,18 +210,19 @@ h1 {
     cursor: pointer;
     font-size: 12px;
     margin-top: 10px;
+    font-family: monospace;
 }
 
 .popout-content span {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     font-weight: 300;
-    color: rgb(25, 14, 186);
+    color: rgb(0, 0, 0);
     font-size: 12px;
     margin-top: 10px;
 }
 
 .close-popout:hover {
-    background-color: #555;
+    background-color: #000000;
 }
 
 .close-popout:focus {

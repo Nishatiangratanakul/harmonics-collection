@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Entry 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <h1>What should I cook for dinner?</h1>
+        <div class="parent">
+            <div class="categories">
+                <div class="category">
+                    <h2>Protein</h2>
+                    <p class="ingredient-box" id="protein-box">Chicken</p>
+                </div>
+                <div class="category">
+                    <h2>Grain</h2>
+                    <p class="ingredient-box" id="grain-box">Rice</p>
+                </div>
+                <div class="category">
+                    <h2>Vegetable</h2>
+                    <p class="ingredient-box" id="vegetable-box">Potato</p>
+                </div>
+                <div class="category">
+                    <h2>Spice</h2>
+                    <p class="ingredient-box" id="spice-box">Curry Powder</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="randomize-button">Randomize</button>
+            </div>
+            <div id="recipe-container">
+                <span id="close-button" onclick="closeRecipe()"></span>
+                <p id="recipe"></p>
+            </div>
+        </div>
+
+        <div id="popout" class="popout">
+            <div id="popout-content" class="popout-content">
+                <span id="popout-close" onclick="closePopout()">Close</span>
+            </div>
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>

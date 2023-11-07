@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'overlook';
-    src: url('../assets/fonts/Overlook.otf') format('opentyoe');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 body {
     display: flex;
@@ -14,10 +9,11 @@ body {
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 550;
-    color: rgb(25, 14, 186);
+    font-family: monospace;
+    font-weight: 500;
+    color: black;
     font-size: 50px;
+    text-align: center;
     position: absolute;
     display: flex;
     top: 5%;
@@ -25,18 +21,16 @@ h1{
 }
 
 .parent {
-    background-image: url("../assets/images/map.png");
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-color: #f0f0f0;
+    height: 100vh;
     width: 100vw;
     display: block;
     margin: 0 auto;
-    height: 100vh;
     overflow: hidden;
 }
 
 .img-container {
+    background-color: #f0f0f0;
     position: relative;
 }
 
@@ -67,22 +61,16 @@ h1{
 }
 
 .grid-item img {
-    max-width: 100%;
-    height: auto;
+    height: 50vh;
     padding: 5px;
     transition: transform 0.2s ease-in-out;
 }
 
 .grid-item span {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    margin-top: 10px;
-}
-
-.popout img {
-    transform: none;
+    font-family: monospace;
+    font-weight: 200;
+    color: black;
+    font-size: 20px;
 }
 
 .item-content:hover img {
@@ -103,39 +91,31 @@ h1{
     right: 0; /* Position it under the third image */
     transform: translateX(0);
 }
-
 .popout {
+    border: 2px solid black;
+    background-color: #f0f0f0;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%; /* Center vertically on the page */
+    left: 50%; /* Center horizontally on the page */
+    transform: translate(-50%, -50%); /* Center the popout container */
+    width: 50vw;
+    max-width: 500px; /* Set a maximum width for the popout container */
     display: none;
-    z-index: 2;
-    background: none;
 }
 
-
 .popout-content {
-    min-width: 40vw;
     text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 20px;
 }
 
 .close-popout {
+    margin-top: 5vh;
     background-color: #333;
+    font-family: Courier, monospace;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    position: absolute;
-    bottom: 28.7%;
-    right: 45%;
 }
 
 .close-popout:hover {
@@ -147,34 +127,28 @@ h1{
 }
 
 .popout-content span {
-    position: absolute;
     color: black;
-    font-family: 'overlook', sans-serif;
+    font-family: Courier, monospace;
     font-size: 18px;
     line-height: 2;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 
 .home-button {
     position: fixed;
+    margin-top: 10px;
     bottom: 8vh;
     left: 50%;
     transform: translateX(-50%);
     background-color: #333;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 300;
+    font-family: Courier, monospace;
+    font-weight: 200;
     color: rgb(255, 255, 255);
     font-size: 17px;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     z-index: 3;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
 }
 
 .home-button i {

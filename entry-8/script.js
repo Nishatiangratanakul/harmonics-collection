@@ -53,11 +53,6 @@ function closePopout() {
     popout.style.display = 'none';
 }
 
-// Function to generate a random dish name
-function generateRandomDish(ingredients) {
-    return `Delicious ${ingredients.Protein} with ${ingredients.Grain}, ${ingredients.Vegetable}, and a touch of ${ingredients.Spice}`;
-}
-
 // Event listener for the "Randomize" button
 document.getElementById('randomize-button').addEventListener('click', randomizeCategories);
 

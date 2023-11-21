@@ -31,7 +31,6 @@ function shakeMagic8Ball() {
   }, 1000);
 }
 
-
 function askQuestion() {
   const responseElement = document.getElementById("response");
 
@@ -43,9 +42,10 @@ function askQuestion() {
       // Replace the user-entered question with a randomly selected response
       const randomResponse = responses[Math.floor(Math.random() * responses.length)];
       responseElement.textContent = randomResponse;
+      // Remove the special class from the initial response
+      responseElement.classList.remove("initial-response");
   } else {
       // If no question was entered, provide a default response
       shakeMagic8Ball();
   }
 }
-

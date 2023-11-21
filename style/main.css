@@ -20,6 +20,7 @@
 .nav-bar a {
     text-decoration: none;
     font-family: 'Cutive Mono', monospace;
+    font-size: 13px;
     transition: all 0.3s ease 0s;
     color: black;
 }

@@ -1,0 +1,87 @@
+body {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column; /* Adjust the flex-direction to column */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#food-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    width: 25vw;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.food-card {
+    width: 25vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 1;
+    width: 100%;
+    height: 50vh; /* Set the height to be half of the food card's height */
+    object-fit: cover; /* Preserve aspect ratio and cover the container */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #676767;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#rejectBtn:hover {
+    background-color: #df7676;
+}
+
+#acceptBtn:hover {
+    background-color: #78c57c;
+}
+
+@media (max-width: 600px) {
+    #food-card-container,
+    .food-card,
+    .image-container {
+        width: 60vw;
+        height: 100vw;
+    }
+
+
+    .header{
+        margin-top: -10%;
+        margin-bottom: 0%;
+
+    }
+}

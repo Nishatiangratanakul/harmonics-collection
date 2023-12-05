@@ -1,3 +1,21 @@
+.homepage-button {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-button i {
+    margin-right: 5px;
+}
 body {
     margin: 0;
 }
@@ -6,7 +24,6 @@ body {
     position: absolute;
     font-family: monospace;
     color: rgb(0, 0, 0);
-    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,20 +32,11 @@ body {
     transform: translateX(50%);
 }
 
-@media (min-width: 900px) {
-    .title{
-        transform: translateX(125%);
-    }
-
-}
-
 .parent {
     background-image: url("../assets/images/map 2.png");
     background-size: cover;
     background-position: center;
     background-color: #f0f0f0;
-    height: 100vh;
-    width: 100vw;
 }
 
 .grid-item .hk-supermarket {
@@ -149,10 +157,6 @@ body {
     width: 20px;
 }
 
-.grid-item:hover img {
-    margin-top: -10px; 
-}
-
 .grid-item span {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
@@ -227,4 +231,91 @@ body {
 
 .close-popout:focus {
     outline: none;
+}
+
+@media (max-width: 400px) {
+    .title{
+        transform: translateX(5%);
+        top: 2%;
+        font-size: 20px;
+    }
+    .parent {
+        height: 100vh;
+        margin-right: 11%;
+    }
+    .popout {
+        top: 50%;
+        left: 45%;
+        width: 300px;
+    }
+
+    .popout-content {
+        padding: 20px;
+    }
+
+    .popout-content .name{
+        font-size: 25px;
+    }
+
+    .popout-content img{
+        margin: 10;
+        max-width: 50%;
+    }
+
+    .close-popout {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .popout-content span {
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+  
+@media (min-width: 900px) {
+    .title{
+        transform: translateX(125%);
+        font-size: 25px;
+    }
+
+    .parent {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .popout {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+    }
+
+    .popout-content {
+        padding: 20px;
+    }
+
+    .popout-content .name{
+        font-size: 25px;
+    }
+
+    .popout-content img{
+        margin-top: 15px;
+        max-width: 50%;
+    }
+
+    .close-popout {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .popout-content span {
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
 }

@@ -1,10 +1,27 @@
+.homepage-button {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 
+.homepage-button i {
+    margin-right: 5px;
+}
 
 body {
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
@@ -12,12 +29,9 @@ h1{
     font-family: monospace;
     font-weight: 500;
     color: black;
-    font-size: 50px;
     text-align: center;
     position: absolute;
     display: flex;
-    top: 5%;
-    z-index: 3;
 }
 
 .parent {
@@ -35,20 +49,15 @@ h1{
 }
 
 .background {
-    width: 100vw;
-    height: 55vw;
-    display: block;
-    position: relative;
+    display: absolute;
+    z-index: 0;
 }
 
 .grid-container {
     position: absolute;
-    top: 53%;
-    left: 50%;
     transform: translate(-50%, -50%); 
     display: flex;
     justify-content: space-between;
-    width: 80%; 
 }
 
 .grid-item {
@@ -61,8 +70,6 @@ h1{
 }
 
 .grid-item img {
-    height: 50vh;
-    padding: 5px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -70,7 +77,6 @@ h1{
     font-family: monospace;
     font-weight: 200;
     color: black;
-    font-size: 20px;
 }
 
 .item-content:hover img {
@@ -78,38 +84,29 @@ h1{
 }
 
 .grid-item:nth-child(1) .popout-container {
-    left: 50%;
     transform: translateX(-50%);
 }
 
 .grid-item:nth-child(2) .popout-container {
-    left: 50%; /* Position it under the second image */
     transform: translateX(-50%);
 }
 
 .grid-item:nth-child(3) .popout-container {
-    right: 0; /* Position it under the third image */
     transform: translateX(0);
 }
 .popout {
     border: 2px solid black;
     background-color: #f0f0f0;
     position: fixed;
-    top: 50%; /* Center vertically on the page */
-    left: 50%; /* Center horizontally on the page */
     transform: translate(-50%, -50%); /* Center the popout container */
-    width: 50vw;
-    max-width: 500px; /* Set a maximum width for the popout container */
     display: none;
 }
 
 .popout-content {
     text-align: center;
-    margin: 20px;
 }
 
 .close-popout {
-    margin-top: 5vh;
     background-color: #333;
     font-family: Courier, monospace;
     color: white;
@@ -129,30 +126,20 @@ h1{
 .popout-content span {
     color: black;
     font-family: Courier, monospace;
-    font-size: 18px;
     line-height: 2;
 }
 
 
 .home-button {
     position: fixed;
-    margin-top: 10px;
-    bottom: 8vh;
-    left: 50%;
     transform: translateX(-50%);
     background-color: #333;
     font-family: Courier, monospace;
     font-weight: 200;
     color: rgb(255, 255, 255);
-    font-size: 17px;
-    padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     z-index: 3;
-}
-
-.home-button i {
-    margin-right: 5px; 
 }
 
 .home-button:hover {

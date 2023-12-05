@@ -1,0 +1,160 @@
+.homepage-button {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-button i {
+    margin-right: 5px;
+}
+@media (max-width: 400px) {
+
+    h1{
+        font-size: 40px;
+        top: 20%;
+        left: 2.5%;
+        z-index: 0;
+    }
+
+    .background {
+        display: none;
+    }
+
+    .grid-container {
+        top: 53vh;
+    }
+
+    .grid-item img {
+        height: 13vh;
+        padding: 5px;
+    }
+    
+    .grid-item span {
+        font-size: 12px;
+    }
+
+    .grid-item:nth-child(1) .popout-container {
+        left: 50%;
+    }
+    
+    .grid-item:nth-child(2) .popout-container {
+        left: 50%; /* Position it under the second image */
+    }
+
+    .grid-item:nth-child(3) .popout-container {
+        right: 0; /* Position it under the third image */
+    }
+
+    .popout {
+        top: 10%; /* Center vertically on the page */
+        left: 50%; /* Center horizontally on the page */
+        width: 100vw;
+        max-width: 300px; /* Set a maximum width for the popout container */
+    }
+    
+    .popout-content {
+        margin: 20px;
+    }
+
+    .close-popout {
+        margin-top: 2vh;
+    }
+
+    .popout-content span {
+        color: black;
+        font-family: Courier, monospace;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .home-button {
+        margin-top: 10px;
+        bottom: 25vh;
+        left: 50%;
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+    
+    .home-button i {
+        margin-right: 5px; 
+    }
+}
+
+@media (min-width: 900px) {
+    h1{
+        font-size: 50px;
+        top: 5%;
+        z-index: 3;
+    }
+
+    .background {
+        width: 100vw;
+        height: 55vw;
+    }
+
+    .grid-container {
+        top: 50%;
+        left: 50%;
+        width: 80%; 
+    }
+
+    .grid-item img {
+        height: 50vh;
+        padding: 5px;
+    }
+    
+    .grid-item span {
+        font-size: 20px;
+    }
+
+    .grid-item:nth-child(1) .popout-container {
+        left: 50%;
+    }
+    
+    .grid-item:nth-child(2) .popout-container {
+        left: 50%; /* Position it under the second image */
+    }
+
+    .grid-item:nth-child(3) .popout-container {
+        right: 0; /* Position it under the third image */
+    }
+    
+    .popout {
+        top: 50%; /* Center vertically on the page */
+        left: 50%; /* Center horizontally on the page */
+        width: 50vw;
+        max-width: 500px; /* Set a maximum width for the popout container */
+    }
+    
+    .popout-content {
+        margin: 20px;
+    }
+
+    .close-popout {
+        margin-top: 5vh;
+    }
+    
+    .popout-content span {
+        color: black;
+        font-family: Courier, monospace;
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .home-button {
+        margin-top: 10px;
+        bottom: 8vh;
+        left: 50%;
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+}

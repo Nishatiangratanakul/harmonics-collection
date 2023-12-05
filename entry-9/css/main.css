@@ -1,3 +1,22 @@
+.homepage-button {
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.homepage-button i {
+  margin-right: 5px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -45,14 +64,12 @@ body {
   max-width: 80%;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  font-size: 16px;
   color: black;
 }
 
 .initial-response{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  font-size: 75px;
   color: black;
 }
 
@@ -100,3 +117,21 @@ button {
   text-decoration: none;
 }
 
+@media (max-width: 400px) {
+  .response {
+    font-size: 10px;
+  }
+  .initial-response{
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .response {
+    font-size: 16px;
+  }
+
+  .initial-response{
+    font-size: 75px;
+  }
+}

@@ -1,3 +1,22 @@
+.homepage-button {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-button i {
+    margin-right: 5px;
+}
+
 .title {
     font-family: monospace;
     text-align: center;
@@ -26,9 +45,10 @@ body {
     background-color: transparent;
     width: 17.5vw;
     height: 50vh;
-    border: 1px solid #f1f1f1;
     cursor: pointer;
     margin: 10px;
+    border: solid black;
+    border-radius: 10px;
 }
 
 .flip-card p {
@@ -57,7 +77,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     transition: opacity 0.8s;
 }

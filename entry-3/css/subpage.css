@@ -24,33 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    min-height: 100vh;
-    background-color: rgb(210, 206, 196);
-}
-
-.thai{
-    font-family: sarabun-new-regular, sans-serif;
-    font-size: 20px;
-}
-
-.thai-title{
-    font-family: sarabun-new-bold, sans-serif;
-    font-size: 25px;
-}
-
-.letter-container {
-    background-image: url('../assets/images/letter.png');
-    background-size:800px;
-    width:  800px;
-    padding-left: 90px;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-    color: #000;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
+    background-color: #f0f0f0;
 }
 
 .text-container{
@@ -60,47 +34,187 @@ body {
     transition: background-color 0.3s;
 }
 
+.thai{
+    font-family: sarabun-new-regular, sans-serif;
+}
+
+.thai-title{
+    font-family: sarabun-new-bold, sans-serif;
+}
+
+.letter-container {
+    border: solid black;
+    background-repeat: no-repeat;
+    color: #000;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+
 h1{
-    font-family: 'overlook', sans-serif;
-    font-size: 25px;
-    line-height: 2;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2{
-    font-family: overlook, sans-serif;
-    font-size: 20px;
-    line-height: .6;
-    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h3{
-    font-family: overlook, sans-serif;
-    font-size: 15px;
-    line-height: 1.9;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
 }
 
 ol{
-    font-family: overlook, sans-serif;
-    font-size: 15px;
-    line-height: .5;
-    padding: 2px;
-    margin: 2px 0;
-    padding-left: 20px;
-    column-count: 2;
-    column-gap: 20px;
+    font-family: 'Courier New', Courier, monospace;
     list-style-type:circle;
 }
 
 li{
-    font-family: overlook, sans-serif;
-    font-size: 15px;
-    line-height: 1.7; 
-    padding: 2px;
-    margin: 2px 0; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .text-container.clicked {
     background-color: transparent;
-    color: red;
+}
+
+.homepage-button {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-button i {
+    margin-right: 5px;
+}
+
+
+@media (max-width: 400px) {
+    body {
+        min-height: 100vh;
+    }
+    
+    .thai{
+        font-size: 10px;
+    }
+    
+    .thai-title{
+        font-size: 20px;
+    }
+    
+    .letter-container {
+        width:  65%;
+        height: 75%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    h1{
+        font-size: 16px;
+        line-height: 1;
+    }
+    
+    h2{
+        font-size: 12px;
+        line-height: 2;
+        padding-top: 5px;
+    }
+    
+    h3{
+        font-size: 8px;
+        line-height: 2;
+        margin: 0;
+    }
+    
+    ol{
+        font-size: 8px;
+        line-height: 1;
+        padding: 2px;
+        margin: 2px 0;
+        padding-left: 20px;
+        column-count: 2;
+        column-gap: 20px;
+    }
+    
+    li{
+        font-size: 8px;
+        line-height: 1; 
+        padding: 2px;
+        margin: 2px 0; 
+    }
+}
+  
+@media (min-width: 900px) {
+    body {
+        min-height: 100vh;
+    }
+    
+    .thai{
+        font-size: 20px;
+    }
+    
+    .thai-title{
+        font-size: 25px;
+    }
+    
+    .letter-container {
+        width:  50%;
+        height: 50%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    h1{
+        font-size: 25px;
+        line-height: 2;
+    }
+    
+    h2{
+        font-size: 20px;
+        line-height: .6;
+        padding-top: 5px;
+    }
+    
+    h3{
+        font-size: 15px;
+        line-height: 1.9;
+        margin: 0;
+    }
+    
+    ol{
+        font-size: 15px;
+        line-height: .5;
+        padding: 2px;
+        margin: 2px 0;
+        padding-left: 20px;
+        column-count: 2;
+        column-gap: 20px;
+    }
+    
+    li{
+        font-size: 15px;
+        line-height: 1.7; 
+        padding: 2px;
+        margin: 2px 0; 
+    }
+
 }

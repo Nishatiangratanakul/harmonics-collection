@@ -1,0 +1,363 @@
+h1{
+    font-family:'Courier New', Courier, monospace;
+    color:black;
+    text-align: center;
+  }
+
+body {
+    font-family: helvetica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .chat-header {
+    font: helvetica;
+    background: rgb(234, 234, 234);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+  .padding-bottom{
+    padding-bottom: 25px;
+  }
+  
+  .padding-top{
+    padding-top: 25px;
+  }
+  
+  .align-left{
+    text-align: left;
+    padding-left: 25px;
+  }
+  
+  .align-right{
+    text-align: right;
+    padding-right: 25px;
+  }
+  
+  .align-center{
+    text-align: center;
+    margin-top: -15px;
+  }
+  
+  .vertical-align-center{
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+  
+  .margin-left{
+    margin-left: 605px;
+  }
+  
+  .chat {
+    display: flex;
+    overflow:auto;
+    flex-direction: column;
+    padding: 1%;
+  }
+  
+  .chat-top {
+    display: flex;
+    overflow:auto;
+    flex-direction: column;
+  }
+  
+  .timestamp{
+    color: #D5D5D5;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .messages {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  .yours {
+    align-items: flex-start;
+  }
+  
+  .yours .message {
+    margin-right: 25%;
+    background-color: #F3F3F3;
+    position: relative;
+  }
+  
+  .yours .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -7px;
+    height: 20px;
+    width: 20px;
+    background: #F3F3F3;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .yours .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .mine {
+    align-items: flex-end;
+  }
+  
+  .mine .message {
+    color: #191919;
+    margin-left: 25%;
+    background: #95EC69;
+    position: relative;
+  }
+  
+  .mine .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: #95EC69;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .mine .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: #ffffff;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .div-to-scroll{   
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 10px 7px 5px;
+  }
+  
+  audio { 
+      width: 150px; 
+      height: 25px;
+      display: block;
+  }
+  
+  img{
+    width: 200px;
+    height:auto;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  a{
+    color:#7586A8
+  }
+  
+  #second {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack items vertically */
+    height: 100%;
+}
+
+.js-type-box {
+    width: 100%;
+    margin-left: 5%;
+}
+
+
+  #first {
+    background: rgb(234, 234, 234);
+  }
+  
+  #first #second{
+    border-radius:5px;
+    background: white;
+  }
+  
+  .smiley-align-left{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 525px;
+  }
+  
+  .blinking{
+    font-size: 30px;
+    color:#54c41d;
+    animation: animate 1s linear infinite;
+    padding-left: 10px;
+    padding-top: 3px;
+  } 
+  
+   /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+      typing 2s steps(8, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* Keyframes for typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15%;
+    }
+  }
+
+  .homepage-button {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-button i {
+    margin-right: 5px;
+}
+  
+  @media (max-width: 400px) {
+    .chat-header {
+        width: 100vw;
+        height: 10%;
+      }
+    
+    .chat {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(249, 249, 249);
+    }
+
+    .yours .message {
+        margin-left: 5%;
+      }
+      .mine .message {
+        margin-right: 5%;
+      }
+
+      .yours img {
+        margin-left: 5%;
+      }
+      .mine img {
+        margin-right: 5%;
+      }
+    
+    .yours .message.last:after {
+      background-color: rgb(249, 249, 249);
+    }
+  
+    .mine .message.last:after {
+      background-color: rgb(249, 249, 249);
+    }
+
+    #first {
+        height: 15vh;
+        width: 100vw;
+      }
+      
+      #first #second{
+        margin-left: 7.5%;
+        margin-right: 12.5%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+      }
+      
+      #second{
+        height: 5vh;
+        width: 85vw;
+      }
+  }
+  
+  @media (min-width: 900px) {
+    .chat-header {
+        width: 52vw;
+        height: 10%;
+      }
+    
+    .chat {
+      width: 50vw;
+      height: 100vh;
+      background-color: rgb(249, 249, 249);
+    }
+    
+    .yours .message.last:after {
+      background-color: rgb(249, 249, 249);
+    }
+  
+    .mine .message.last:after {
+      background-color: rgb(249, 249, 249);
+    }
+
+    #first {
+        height: 15vh;
+        width: 52vw;
+      }
+      
+      #first #second{
+        margin-left: 7.5%;
+        margin-right: 12.5%;
+        margin-top: 35px;
+        margin-bottom: 25px;
+      }
+      
+      #second{
+        height: 5vh;
+        width: 43vw;
+      }
+  }

@@ -1,9 +1,8 @@
 body{
-    background-color: rgb(210, 206, 196);
+    background-color: white;
 }
 .img-container {
     position: relative;
-    height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +10,6 @@ body{
 }
 
 .img-container img {
-    width: 500px; 
     object-fit: cover;
     transition: opacity 0.3s;
 }
@@ -19,16 +17,12 @@ body{
 img.image-hover {
     position: absolute;
     opacity: 0;
-    width: 500px;
     transition: opacity 0.3s;
 }
 
 .overlay-button {
     position: absolute;
     z-index: 2;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 
@@ -44,4 +38,58 @@ img.image-hover {
 
 .img-container:hover img:first-child {
     opacity: 0;
+}
+
+.homepage-button {
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-button i {
+    margin-right: 5px;
+}
+
+@media (max-width: 400px) {
+    .img-container {
+        transform: translate(Y)(50%, 50%);
+        height: 800px;
+    }
+    .img-container img {
+        width: 90%; 
+    }
+    img.image-hover {
+        width: 500px;
+    }
+    .overlay-button {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+  
+@media (min-width: 900px) {
+    .img-container {
+        height: 800px;
+    }
+    .img-container img {
+        width: 500px; 
+    }
+    img.image-hover {
+        width: 500px;
+    }
+    .overlay-button {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
